@@ -1,0 +1,13 @@
+prefix=/home/qazer/Documents/GitHub/Breakout_C/linux_release
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib64
+includedir=${prefix}/include
+
+Name: SDL2_ttf
+Description: ttf library for Simple DirectMedia Layer with FreeType 2 support
+Version: 2.22.0
+Requires: sdl2 >= 2.0.10
+Libs: -L${libdir} -lSDL2_ttf
+Cflags: -I${includedir}/SDL2
+Requires.private: 
+Libs.private: -lfreetype

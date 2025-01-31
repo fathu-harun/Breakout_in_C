@@ -1,0 +1,14 @@
+prefix=/home/qazer/Documents/GitHub/Breakout_C/linux_release
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib64
+includedir=${prefix}/include
+
+Name: SDL2_image
+Description: image loading library for Simple DirectMedia Layer
+Version: 2.8.2
+Requires: sdl2 >= 2.0.9
+Libs: -L${libdir} -lSDL2_image
+Requires.private: 
+Libs.private: 
+Cflags: -I${includedir}/SDL2
+

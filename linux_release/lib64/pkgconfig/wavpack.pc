@@ -1,0 +1,13 @@
+prefix=/home/qazer/Documents/GitHub/Breakout_C/linux_release
+exec_prefix=${prefix}
+libdir=${prefix}/lib64
+includedir=${prefix}/include
+
+Name: wavpack
+Description: wavpack library
+Version: 5.7.0
+Requires:
+Conflicts:
+Libs: -L${libdir} -lwavpack
+Libs.private: -lm
+Cflags: -I${includedir}
